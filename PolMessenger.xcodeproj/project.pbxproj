@@ -20,9 +20,13 @@
 		CC6A23DE29A4C5B90094F8AC /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6A23DD29A4C5B90094F8AC /* NewConversationViewController.swift */; };
 		CC6A23E029A4C5EF0094F8AC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6A23DF29A4C5EF0094F8AC /* ProfileViewController.swift */; };
 		CC6A23E329A4D2520094F8AC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6A23E229A4D2520094F8AC /* Extensions.swift */; };
+		CC7900B329A53AB300D379A1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC7900B229A53AB300D379A1 /* GoogleService-Info.plist */; };
+		CC877F67B07DDC6819637115 /* Pods_PolMessenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB869FA1F0404DADBBC3F98C /* Pods_PolMessenger.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A6483C2CB45E91B8E89FD41 /* Pods-PolMessenger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PolMessenger.debug.xcconfig"; path = "Target Support Files/Pods-PolMessenger/Pods-PolMessenger.debug.xcconfig"; sourceTree = "<group>"; };
+		3A0BD429799AE2D969C58407 /* Pods-PolMessenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PolMessenger.release.xcconfig"; path = "Target Support Files/Pods-PolMessenger/Pods-PolMessenger.release.xcconfig"; sourceTree = "<group>"; };
 		CC6A239829A4B75B0094F8AC /* PolMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PolMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC6A239B29A4B75B0094F8AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC6A239D29A4B75B0094F8AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +42,8 @@
 		CC6A23DD29A4C5B90094F8AC /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		CC6A23DF29A4C5EF0094F8AC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CC6A23E229A4D2520094F8AC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CC7900B229A53AB300D379A1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EB869FA1F0404DADBBC3F98C /* Pods_PolMessenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PolMessenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +51,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC877F67B07DDC6819637115 /* Pods_PolMessenger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF2D6A70AAFFB7E0AB43A4DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A6483C2CB45E91B8E89FD41 /* Pods-PolMessenger.debug.xcconfig */,
+				3A0BD429799AE2D969C58407 /* Pods-PolMessenger.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BAA7AF338AE0EC3A3E340B12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB869FA1F0404DADBBC3F98C /* Pods_PolMessenger.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CC6A238F29A4B75B0094F8AC = {
 			isa = PBXGroup;
 			children = (
+				CC7900B229A53AB300D379A1 /* GoogleService-Info.plist */,
 				CC6A239A29A4B75B0094F8AC /* PolMessenger */,
 				CC6A239929A4B75B0094F8AC /* Products */,
+				AF2D6A70AAFFB7E0AB43A4DF /* Pods */,
+				BAA7AF338AE0EC3A3E340B12 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC6A23AC29A4B75C0094F8AC /* Build configuration list for PBXNativeTarget "PolMessenger" */;
 			buildPhases = (
+				146B093482273A7E9F3B5D92 /* [CP] Check Pods Manifest.lock */,
 				CC6A239429A4B75B0094F8AC /* Sources */,
 				CC6A239529A4B75B0094F8AC /* Frameworks */,
 				CC6A239629A4B75B0094F8AC /* Resources */,
+				917A25CB448CE27D9D0BCF45 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -203,12 +232,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC6A23A829A4B75C0094F8AC /* LaunchScreen.storyboard in Resources */,
+				CC7900B329A53AB300D379A1 /* GoogleService-Info.plist in Resources */,
 				CC6A23A529A4B75C0094F8AC /* Assets.xcassets in Resources */,
 				CC6A23A329A4B75B0094F8AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		146B093482273A7E9F3B5D92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PolMessenger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		917A25CB448CE27D9D0BCF45 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PolMessenger/Pods-PolMessenger-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PolMessenger/Pods-PolMessenger-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PolMessenger/Pods-PolMessenger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CC6A239429A4B75B0094F8AC /* Sources */ = {
@@ -366,6 +438,7 @@
 		};
 		CC6A23AD29A4B75C0094F8AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A6483C2CB45E91B8E89FD41 /* Pods-PolMessenger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -395,6 +468,7 @@
 		};
 		CC6A23AE29A4B75C0094F8AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A0BD429799AE2D969C58407 /* Pods-PolMessenger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
