@@ -22,6 +22,7 @@
 		CC6A23E329A4D2520094F8AC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6A23E229A4D2520094F8AC /* Extensions.swift */; };
 		CC7900B329A53AB300D379A1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC7900B229A53AB300D379A1 /* GoogleService-Info.plist */; };
 		CC877F67B07DDC6819637115 /* Pods_PolMessenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB869FA1F0404DADBBC3F98C /* Pods_PolMessenger.framework */; };
+		CC99E9C029A6377500DC981F /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99E9BF29A6377500DC981F /* DataBaseManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		CC6A23DF29A4C5EF0094F8AC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CC6A23E229A4D2520094F8AC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CC7900B229A53AB300D379A1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CC99E9BF29A6377500DC981F /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
 		EB869FA1F0404DADBBC3F98C /* Pods_PolMessenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PolMessenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -149,6 +151,7 @@
 				CC6A239B29A4B75B0094F8AC /* AppDelegate.swift */,
 				CC6A239D29A4B75B0094F8AC /* SceneDelegate.swift */,
 				CC6A23E229A4D2520094F8AC /* Extensions.swift */,
+				CC99E9BF29A6377500DC981F /* DataBaseManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				CC6A23E029A4C5EF0094F8AC /* ProfileViewController.swift in Sources */,
 				CC6A239E29A4B75B0094F8AC /* SceneDelegate.swift in Sources */,
 				CC6A23DA29A4C5570094F8AC /* PhotoViewerViewController.swift in Sources */,
+				CC99E9C029A6377500DC981F /* DataBaseManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
