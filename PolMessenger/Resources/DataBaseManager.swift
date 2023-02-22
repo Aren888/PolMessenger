@@ -19,7 +19,11 @@ final class DataBaseManager {
 extension DataBaseManager {
     
     public func userExist(with email: String, completion: @escaping ((Bool) -> Void)) {
-        databace.child(email).observeSingleEvent(of: .value, with: {  snapshot in
+        
+        var safeEmail = email.replacingOccurrences(of: ".", with: "-")
+        safeEmail = safeEmail.replacingOccurrences(of: "@", with: "-")
+        
+        databace.child(safeEmail).observeSingleEvent(of: .value, with: {  snapshot in
             guard snapshot.value as? String != nil else {
                 completion(false)
                 return
@@ -29,7 +33,7 @@ extension DataBaseManager {
     }
     /// inserts new user for databace
     public func insertUser(with user: ChatAppUser) {
-        databace.child(user.emailAddress).setValue([
+        databace.child(user.safeEmail).setValue([
             "first_name": user.firstName,
             "last_name": user.lastName
         ])
@@ -42,4 +46,10 @@ struct ChatAppUser  {
     let lastName: String
     let emailAddress: String
     //        let profilePictureUrl: String
+    
+    var safeEmail: String {
+        var safeEmail = emailAddress.replacingOccurrences(of: ".", with: "-")
+        safeEmail = safeEmail.replacingOccurrences(of: "@", with: "-")
+        return safeEmail
+    }
 }

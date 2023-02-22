@@ -131,7 +131,7 @@ class LoginViewController: UIViewController {
         
         // Firebace Login
         
-        FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password, completion: { [ weak self ] authResult, error in 
+        FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password, completion: { [ weak self ] authResult, error in
             guard let strongSelf = self else {
                 return
             }
