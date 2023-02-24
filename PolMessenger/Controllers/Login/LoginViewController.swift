@@ -38,7 +38,8 @@ class LoginViewController: UIViewController {
                                               width: 5,
                                               height: 0))
         field.leftViewMode = .always
-        field.backgroundColor = .white
+        field.textColor = .black
+        field.backgroundColor = .clear
         return field
     }()
     
@@ -57,7 +58,8 @@ class LoginViewController: UIViewController {
                                               width: 5,
                                               height: 0))
         field.leftViewMode = .always
-        field.backgroundColor = .white
+        field.textColor = .black
+        field.backgroundColor = .clear
         field.isSecureTextEntry = true
         return field
     }()
