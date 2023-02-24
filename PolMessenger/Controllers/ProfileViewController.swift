@@ -46,10 +46,7 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
         actionSheet.addAction(UIAlertAction(title: "Log Out",
                                       style: .destructive,
                                      handler: { [weak self] _ in
-            
-            guard let strongSelf = self else {
-                return
-            }
+            guard let strongSelf = self else { return }
             
             do {
                 try FirebaseAuth.Auth.auth().signOut()
@@ -66,7 +63,6 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
         
         actionSheet.addAction(UIAlertAction(title: "Cancel",
                                                style: .cancel))
-        
         present(actionSheet, animated: true)
     }
 }
